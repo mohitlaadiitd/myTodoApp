@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr" ng-app="todoApp">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="/css/style.css">
+     <script type="text/javascript" src="angular.min.js"></script>
+     <script type="text/javascript" src="app.js"></script>
+     <title></title>
+   </head>
+   <body ng-controller="displayController">
+     <div id="heading">
+       <h1>To-Do App</h1>
+     </div>
+     <div id="inputArea">
+         <div >
+           <input type="text" id="input" placeholder="Enter new item..." ng-model="newListItem">
+         </div>
+         <div >
+           <button type="button" name="button" ng-click="newItemAdded()">Add</button>
+         </div>
+         <div id="todoList">
+           <ul>
+             <li ng-repeat="item in myTodoList">
+               {{$index+1}}. {{item}}
+             </li>
+           </ul>
+         </div>
+     </div>
+     <div>
+
+     </div>
+   </body>
+ </html>
