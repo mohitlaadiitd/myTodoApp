@@ -2,10 +2,65 @@
  <html lang="en" dir="ltr" ng-app="todoApp">
    <head>
      <meta charset="utf-8">
-     <link rel="stylesheet" href="./css/style.css">
      <script type="text/javascript" src="angular.min.js"></script>
      <script type="text/javascript" src="app.js"></script>
-     <title></title>
+     <title>TodoApp</title>
+    <style>
+*{
+  background-color: #2b2728;
+  color:#fff;
+  text-align:center;
+  font-family: Verdana, sans-serif;
+}
+
+#inputArea{
+  margin:0;
+}
+
+#heading{
+  margin:50px 0;;
+  padding:0;
+  background:#2b2728;
+  font-size: 30px;
+}
+
+#input{
+  margin:40px;
+  padding:20px;
+  background-color: #fff;
+  font-size: 26px;
+  color:black;
+  font-weight: bold;
+  border-radius: 10px;
+  width:50%;
+  text-align: left;
+}
+
+button{
+  background-color: #d61313;
+  border: none;
+  border-radius: 15px;
+  padding:24px 64px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#todoList{
+  margin:30px 0px;
+}
+
+#todoList ul{
+  list-style: none;
+}
+
+#todoList ul li{
+  font-size: 25px;
+  text-align: left;
+  margin:15px;
+  padding:15px;
+  background-color:#4a4647;
+}
+   </style> 
    </head>
    <body ng-controller="displayController">
      <div id="heading">
